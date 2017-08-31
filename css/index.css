@@ -1,0 +1,326 @@
+/*
+* @Author: GQ chen
+* @Date:   2017-08-08 22:43;
+* @Last Modified by:   GQ chen
+* @Last Modified time: 2016-08-28 08:46:11
+*/
+
+/*尽可能使用ID去限定元素*/
+/*尽可能多用直接子代选择器 减少CSS的查询 但是代码会多一些*/
+
+/* 顶部导航栏开始 */
+body{
+	background-image: url(../images/bg.jpg);	
+}
+#top-bar{
+	height:60px;
+	background-color: #CCC;
+}
+.fixed{
+	position: fixed;
+}
+.icon-img{
+	margin-left: 30px;
+	width: 60px;
+	height: 60px;
+	border:2px solid FFF;
+	background-image: url(../images/myLogo.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;	
+	border-radius: 50%;
+	/*transform: rotate(360deg);*/
+}
+#top-bar .container .col-md-3 span{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+	padding-left: 30px;
+}
+#top-bar .container .col-md-6 ul{
+	margin: 0px;
+	margin-left: 40px;
+	list-style: none;
+}
+#top-bar .container .col-md-6 ul li{
+	padding-left: 15px;
+}
+#top-bar .container .col-md-6 ul li:first-child{
+	padding-left: 0px;
+}
+#top-bar .container .col-md-6 ul li a{
+	font-size: 18px;
+	color:#000;
+	font-weight: bold;
+	line-height: 60px;
+}
+/* 顶部导航栏结束 */
+
+/*首页内容开始*/
+.introduction{
+	margin-top: 250px;
+}
+.introduction .container .content{
+	width:500px;
+	margin: 0 auto;
+}
+.introduction .container .Cicon{
+	margin-left: 30px;
+	margin-right: 30px;
+	border: 3px solid #FFF;
+	width: 100px;
+	height: 100px;
+	background-image: url(../images/myLogo.jpg);
+	background-size: cover;
+	border-radius: 50%;
+}
+.introduction .container .content .word{
+	width: 250px;
+	margin-top: 20px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.introduction .container .content .word p:first-child{
+	font-weight: normal;
+}
+.introduction .container .cl{
+	width: 350px;
+	margin:0 auto;
+}
+.introduction .container .cl .words{
+	margin-top: 15px;
+    padding-top: 20px;
+	border-top: 2px solid #CCC;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 550;
+}
+.introduction .container .cl .email{
+	font-size: 18px;
+	text-align: center;
+}
+/*首页内容结束*/
+/*about me开始*/
+#about_me{
+	margin-top: 200px;
+}
+#about_me .contentBox{
+	width: 100%;
+	margin:0 auto;
+}
+#about_me .contentBox .myInfo{
+
+	width: 600px;
+	height: 170px;
+	background-color: #CCC;
+	margin:0 auto;
+	border-radius:30px;
+	margin-bottom: 20px;
+}
+#about_me .contentBox .myInfo ul{
+	padding-top: 20px;
+	list-style: none;
+}
+#about_me .contentBox .myInfo ul li{
+	width: 100px;
+	margin-right:30px;
+/*	background-color: #fff;*/
+	text-align: center;
+}
+#about_me .contentBox .myInfo ul li:first-child{
+	margin-left:20px;
+}
+#about_me .contentBox .myInfo ul li i{
+	font-size: 60px;
+}
+#about_me .contentBox .myInfo ul li span{
+	font-size: 18px;
+	font-weight: bold;
+}
+#about_me .contentBox .education{
+	width: 800px;
+	height: 200px;
+	background-color: #CCC;
+	margin:0 auto;
+	border-radius: 40px ;
+}
+#about_me .contentBox .education .box1{
+	padding-left: 10px;
+}
+#about_me .contentBox .education .box1, .box2{
+	padding-top: 24px;
+}
+#about_me .contentBox .education .box1 .JXLG{
+	width: 150px;
+	height: 150px;
+	background-image: url(../images/JXLG4.jpg);
+	background-size: cover;
+
+}
+#about_me .contentBox .education .box1 ul{
+	padding-top: 10px;
+	list-style: none;
+	/*padding-right: 10px;*/
+	border-right: 2px dashed #CCC;	
+
+}
+#about_me .contentBox .education .box1 ul li{
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#about_me .contentBox .education .box1 ul li:nth-child(3){
+	color:#C81623;
+}
+#about_me .contentBox .education .box2{
+    margin-left: 20px;
+}
+#about_me .contentBox .education .box2 .ZJUT{
+	width: 150px;
+	height: 150px;
+	background-image: url(../images/ZJUT1.jpg);
+	background-size: cover;
+}
+#about_me .contentBox .education .box2 ul{
+	padding-top: 10px;
+	list-style: none;
+}
+#about_me .contentBox .education .box2 ul li{
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#about_me .contentBox .education .box2 ul li:nth-child(2){
+	color:#C81623;
+}
+/*about me结束*/
+
+/*专业技能开始*/
+#perskill{
+	margin-top: 250px;
+	margin-bottom:150px;
+}
+.title{
+	margin:0 auto;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom:10px;
+}
+.line2{
+	width: 120px;
+	height: 2px;
+	background-color: #C81623;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+.Egtitle{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+#perskill .container .loading{
+	width: 1000px;
+	height: 400px;
+/*	background-color: #CCC;*/
+	margin:0 auto;
+}
+#perskill .container .loading ul{
+	list-style: none;
+}
+#bluecircle{
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+#perskill .container .loading .HTML5{
+	padding-left: 80px;
+}
+#perskill .container .loading ul li .skillTitle{
+	padding-left: 50px;	
+	font-size: 20px;
+	font-weight: bold;
+}
+#JS{
+	margin-left: -20px;	
+}
+#H5{
+	margin-left: 70px;
+}
+/*专业技能结束*/
+
+/*我的作品开始*/
+#works .container .works{
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+	justify-content: center;
+}
+#works .container .works li{
+	width: 200px;
+	height: 200px;
+	border:2px solid #CCC;
+	margin-right: 30px;
+}
+#works .container ul li img{
+	width: 100%;
+	height: 100%
+}
+/*我的作品结束*/
+/*联系我开始*/
+#works{
+	margin-bottom: 250px;
+}
+#contact .container .words{
+	width: 400px;
+	height: 250px;
+	margin:0 auto;
+	background-color: #CCC;
+}
+#contact .container .line{
+	width: 100%;
+	height: 2px;
+	margin-top: 40px;
+	background-color: #CCC;
+}
+#contact .container .contactWays{
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#contact .container .contactWays a{
+	text-decoration: none;
+	font-size: 30px;
+	margin-right:20px; 
+}
+#contact .container .contactWays a:hover{
+	opacity:0.6;
+}
+#contact .container .contactWays a:first-child{
+	color:#000;
+}
+#contact .container .contactWays a:nth-child(3){
+	color:#2DAFED;
+}
+#contact .container .contactWays a:nth-child(2){
+	color:#02CE0E;
+}
+#contact .container .contactWays a:nth-child(4){
+	color:#000;
+}
+#contact .container .contactWays a:last-child{
+	color:#E6162D;
+}
+.footer{
+	text-align: center;
+}
+/*#contact .container .contactWays a.icon-weixin1{
+	position: relative;
+}*/
+/*.icon-weixin1:after{
+	content:url(images/weChatMa.jpg);
+}*/
+
+/*联系我结束*/
+
