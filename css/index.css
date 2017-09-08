@@ -10,7 +10,8 @@
 
 /* 顶部导航栏开始 */
 body{
-	background-image: url(../images/bg.jpg);	
+	background-image: url(../images/bg.jpg);
+	font-family: "微软雅黑";	
 }
 #top-bar{
 	height:60px;
@@ -116,7 +117,7 @@ body{
 	background-color: #CCC;
 	margin:0 auto;
 	border-radius:30px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 #about_me .contentBox .myInfo ul{
 	padding-top: 20px;
@@ -194,6 +195,14 @@ body{
 #about_me .contentBox .education .box2 ul li:nth-child(2){
 	color:#C81623;
 }
+#about_me .contentBox .bottom{
+	padding-top: 15px;
+}
+#about_me .contentBox .bottom1 p{
+	text-align: center;
+	font-size: 16px;
+/*	font-weight: 600;*/
+}
 /*about me结束*/
 
 /*专业技能开始*/
@@ -218,8 +227,15 @@ body{
 .Egtitle{
 	text-align: center;
 	font-size: 18px;
-	font-weight: 500;
-	margin-bottom: 30px;
+	font-weight: 550;
+	margin-bottom: 20px;
+}
+.bottom2{
+	margin:0 auto;
+	width: 750px;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 50px;
 }
 #perskill .container .loading{
 	width: 1000px;
@@ -262,10 +278,66 @@ body{
 	height: 200px;
 	border:2px solid #CCC;
 	margin-right: 30px;
+	position: relative;
 }
 #works .container ul li img{
 	width: 100%;
 	height: 100%
+}
+.my_Demo{
+	padding-bottom: 30px;
+}
+#works .container ul .work1:hover::after{
+	content:"使用H5,C3制作官方主页";
+	display:block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top:0;
+	left:0;
+	color:#000;
+	font-size: 15px;
+	padding-top: 85px;
+}
+#works .container ul .work2:hover::after{
+	content:"使用原生JS制作flappyBird游戏";
+	display:block;
+	width: 90%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top:0;
+	left:0;
+	color:#000;
+	font-size: 15px;
+	padding-top: 75px;
+}
+#works .container ul .work3:hover::after{
+	content:"购物车结算Jq,订单的选择或删除、金额的计算";
+	display:block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top:0;
+	left:0;
+	color:#000;
+	font-size: 15px;
+	padding-top: 75px;
+}
+#works .container ul .work4:hover::after{
+	content:"使用Bootstrap制作响应式页面";
+	display:block;
+	width: 90%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top:0;
+	left:0;
+	color:#000;
+	font-size: 15px;
+	padding-top: 75px;
 }
 /*我的作品结束*/
 /*联系我开始*/
@@ -273,10 +345,26 @@ body{
 	margin-bottom: 250px;
 }
 #contact .container .words{
-	width: 400px;
-	height: 250px;
 	margin:0 auto;
-	background-color: #CCC;
+	text-align: center;
+}
+#contact .container .words p:first-child, p:nth-child(2){
+	font-size: 22px;
+}
+#contact .container .words p:nth-child(2){
+	margin-bottom: 30px;
+}
+#contact .container .words .two span:first-child{
+	color:#FF0000;
+}
+#contact .container .words .two span:nth-child(2){
+	color:#33CCFF;
+}
+#contact .container .words .two span:nth-child(3){
+	color:#66CC00;
+}
+#contact .container .words .two span:last-child{
+	color:#FF6633;
 }
 #contact .container .line{
 	width: 100%;

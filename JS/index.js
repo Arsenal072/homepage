@@ -25,16 +25,16 @@ $(function(){
 	})
 	// 鼠标悬停，切换文字结束
 	// 首页锚点跳转开始
-	$("#first_page").on("click",function(){
-		$(window).scrollTop(0);
-	})
-	$("#2nd_page").on("click",function(){
-		var ab_offsetTop=$("#about_me").offset().top;
-		var ab_offsetTop=ab_offsetTop+topHeight;
-		// console.log(ab_offsetTop);
-		// $("#about_me").offset({"left":"0","top":"ab_offsetTop"});
-		$(window).scrollTop(ab_offsetTop);
-	})
+	// $("#first_page").on("click",function(){
+	// 	$(window).scrollTop(0);
+	// })
+	// $("#2nd_page").on("click",function(){
+	// 	var ab_offsetTop=$("#about_me").offset().top;
+	// 	var ab_offsetTop=ab_offsetTop+topHeight;
+	// 	// console.log(ab_offsetTop);
+	// 	// $("#about_me").offset({"left":"0","top":"ab_offsetTop"});
+	// 	$(window).scrollTop(ab_offsetTop);
+	// })
 	// 首页锚点跳转结束
 	// 
 	// 作品图及透明度开始

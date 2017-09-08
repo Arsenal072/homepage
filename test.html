@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    
+    <style>
+div{
+    position: relative;
+    width:352px ;
+    height: 274px;
+    overflow: hidden;
+}
+img {
+    position: absolute;
+}
+        p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,60,99,0.3);
+            line-height: 260px;
+            padding-left: 120px;
+            display: none;
+        }
+        div:hover >p{
+            display: block;
+        }
+.test{
+    width: 100px;
+    height: 100px;
+    background-color: #CCC;
+}
+    </style>
+}
+</head>
+<body>
+<div>
+<img src="images/1.jpg">
+    <p><a href="#">this ia s monster</a></p>
+</div>
+
+<div class="test"></div>
+<div class="demo">
+    全选<input type="checkbox" value="" id="sa">
+    <br>
+    全不选<input type="checkbox" value="" id="nsa">
+    <ul>
+        <li><input type="checkbox">H5</li>
+        <li><input type="checkbox">C3</li>
+        <li><input type="checkbox">JS</li>
+        <li><input type="checkbox">Jquery</li>
+    </ul>
+</div>
+
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="JS/index.js"></script>
+<script>
+    $(function(){
+        $(".demo #sa").on("click",function(){
+            var result=$(".demo #sa").prop("checked");
+            $(".demo ul li input").prop("checked",result);
+            $(".demo #nsa").prop("checked",false)
+        })
+        $(".demo #nsa").on("click",function(){
+            $(".demo ul li input").prop("checked",false);
+            $(".demo #sa").prop("checked",false)
+        })
+        $(".demo ul li input").on("click",function(){
+            $(".demo #nsa").prop("checked",false);
+            var allLength=$(".demo ul li input").length;
+            var checkedLength=$(".demo ul li input:checked").length;
+            $(".demo #sa").prop("checked",allLength==checkedLength);
+        })
+
+    })
+
+</script>
+
+</body>
+</html>
