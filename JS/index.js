@@ -56,5 +56,18 @@ $(function(){
 	// // $(".test").on("mouseover",function(){
 	// // 	$(".test").animate({"width":"300px"},1000).animate({"height":"300px"})
 	// // })	
+	$(".work1").on("click",function(){
+		window.location.href="https://arsenal072.github.io/boyahudong/";
+	})
+	$(".work2").on("click",function(){
+		window.location.href="https://arsenal072.github.io/flappyBird/";
+	})
+	$(".work3").on("click",function(){
+		window.location.href="https://arsenal072.github.io/shoppingCar/";
+	})
+	$(".work4").on("click",function(){
+		window.location.href="https://arsenal072.github.io/weijinsuo/";
+	})
+
 })
 
